@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container layout */
+.app-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Left Sidebar */
+.sidebar {
+    width: 380px; /* Same width as WhatsApp Desktop */
+    height: 100vh;
+    background: #f0f2f5;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat window */
+.chat-window {
+    flex: 1;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Empty center welcome screen (WhatsApp default) */
+.chat-window-empty {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #6c6c6c;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.chat-window-empty img {
+    width: 120px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE: Mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hide chat on mobile until selected */
+    .chat-window {
+        display: none;
+    }
+
+    body.mobile-chat-open .chat-window {
+        display: flex;
+    }
+
+    body.mobile-chat-open .sidebar {
+        display: none;
+    }
+}
+
+
+/* Welcome screen container */
+.chat-window-empty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Main content */
+.welcome-content {
+    text-align: center;
+    color: #646464;
+}
+
+.welcome-content img {
+    width:80px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+
+/* Title smaller */
+.welcome-content h2 {
+    font-size: 20px;  /* was 24px */
+    margin-bottom: 8px;
+    color: #070000;
+}
+
+/* Sub text smaller */
+.welcome-content p {
+    font-size: 18px;  /* was 15px */
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+/* Bottom lock message */
+.welcome-footer {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #919191; /* WhatsApp grey */
+    font-size: 14px;
+}
+
+.welcome-footer i {
+    font-size: 15px;
+    color: #919191;
+}
+
+
+
+/* Main welcome content wrapper */
+.welcome-content {
+    text-align: center;
+    color: #646464;
+    transform: scale(0.85); /* shrink everything together */
+    margin-bottom: 40px;
+}
+
+/* Logo smaller */
+.welcome-content img {
+    width: 80px;     /* was 120px */
+    opacity: 0.6;
+    margin-bottom: 15px;
+}

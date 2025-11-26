@@ -1,0 +1,55 @@
+.sidebar-header {
+    background: #ffffff;
+    padding: 18px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.sidebar-search {
+    padding: 10px 15px;
+    background: #f0f2f5;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-search input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+/* The entire sidebar container */
+.sidebar {
+    width: 380px;
+    height: 100vh;
+    background: #f0f2f5;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat list area (scrollable) */
+.chat-list {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+/* Smooth scrollbar */
+.chat-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.chat-list::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
