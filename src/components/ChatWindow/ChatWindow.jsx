@@ -50,21 +50,28 @@ if (!chat) {
 
     return (
         <div className="chat-window">
-            <div className="chat-header">
-                <img src={chat.avatar} alt={chat.name} className="chat-avatar" />
-                <h3>{chat.name}</h3>
-            </div>
+           <div className="chat-header-left">
+        <img src={chat.avatar} alt="" className="chat-header-avatar" />
+        <div>
+            <h4>{chat.name}</h4>
+            <span>last seen today at 22:17</span>
+        </div>
+    </div>
+             <div className="chat-header-right">
+        <i className="bi bi-search"></i>
+        <i className="bi bi-telephone"></i>
+        <i className="bi bi-camera-video"></i>
+        <i className="bi bi-three-dots-vertical"></i>
+    </div>
 
             <div className="messages">
-                {chat.messages.map((msg, i) => (
-                    <div
-                        key={i}
-                        className={`message ${msg.from === "Me" ? "sent" : "received"}`}
-                    >
-                        <p>{msg.text}</p>
-                        <small>{msg.timestamp}</small>
-                    </div>
-                ))}
+               {chat.messages.map(msg => (
+    <div className={`message ${msg.from === "Me" ? "sent" : "received"}`}>
+        <p>{msg.text}</p>
+        <small>{msg.timestamp}</small>
+    </div>
+))}
+
                 <div ref={messagesEndRef} />
             </div>
 

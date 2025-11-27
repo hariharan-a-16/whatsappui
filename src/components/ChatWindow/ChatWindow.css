@@ -8,11 +8,14 @@
 
 .chat-window {
     flex: 1;
+    background-image: url("https://i.imgur.com/zYf7QZg.png");
+    background-size: cover;
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
-    background: #e5ddd5;
-    height: 100vh;
 }
+
+
 
 /* Chat Empty State */
 .chat-window-empty {
@@ -24,11 +27,40 @@
 
 /* Chat Header */
 .chat-header {
-    padding: 12px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
     background: #f0f2f5;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.chat-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chat-header-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.chat-header-left h4 {
+    margin: 0;
+}
+
+.chat-header-left span {
+    font-size: 13px;
+    color: #6c6c6c;
+}
+
+.chat-header-right i {
+    font-size: 22px;
+    margin-left: 25px;
+    cursor: pointer;
+    color: #54656f;
 }
 
 .chat-header img {
@@ -49,47 +81,62 @@
 
 /* Chat Bubbles */
 .message {
-    max-width: 75%;
-    margin-bottom: 6px;
-    padding: 8px 12px;
-    border-radius: 10px;
+    max-width: 60%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 5px 10px;
     font-size: 15px;
     position: relative;
 }
 
 .message.sent {
-    align-self: flex-end;
-    background: #d9fdd3;
+    margin-left: auto;
+    background: #dcf8c6;
 }
 
 .message.received {
-    align-self: flex-start;
-    background: #fff;
+    background: #ffffff;
 }
 
+/* Message ticks, time */
 .message small {
-    font-size: 10px;
-    color: #555;
-    display: block;
-    margin-top: 4px;
+    font-size: 11px;
+    color: #999;
 }
+
+
+/* Message ticks, time */
+.message small {
+    font-size: 11px;
+    color: #999;
+}
+
 
 /* Input Area */
 .chat-input {
+    padding: 9px 16px;
     display: flex;
-    padding: 10px;
+    align-items: center;
+    gap: 16px;
     background: #f0f2f5;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #dcdcdc;
 }
 
 .chat-input input {
     flex: 1;
-    border: 1px solid #ccc;
-    padding: 10px 14px;
+    padding: 12px 16px;
     border-radius: 25px;
-    outline: none;
+    background: #ffffff;
+    border: none;
     font-size: 15px;
 }
+
+.chat-input i {
+    font-size: 22px;
+    cursor: pointer;
+    color: #54656f;
+}
+
 
 .chat-input button {
     margin-left: 10px;

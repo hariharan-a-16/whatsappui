@@ -8,7 +8,23 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function Sidebar({ chats, onSelectChat, selectedChat }) {
   return (
     <>
-    <div className="sidebar">
+   <div className="sidebar">
+
+  <div className="sidebar-top-icons">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      className="sidebar-logo"
+    />
+
+    <div className="sidebar-right-icons">
+      <i className="bi bi-people-fill"></i>
+      <i className="bi bi-broadcast"></i>
+      <i className="bi bi-chat-left-text"></i>
+      <i className="bi bi-dash-circle"></i>
+      <i className="bi bi-gear"></i>
+    </div>
+  </div>
+
   <div className="sidebar-header">Chats</div>
 
   <div className="sidebar-search">
@@ -25,7 +41,9 @@ function Sidebar({ chats, onSelectChat, selectedChat }) {
       />
     ))}
   </div>
+
 </div>
+
 
     </>
   );
