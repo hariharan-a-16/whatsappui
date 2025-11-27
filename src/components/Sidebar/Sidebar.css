@@ -32,6 +32,30 @@
     flex-direction: column;
 }
 
+/* filter chips */
+.sidebar-filters {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid #d1d7db;
+  border-bottom: 1px solid #d1d7db;
+  background: #f8f9fa;   /* light grey */
+}
+
+.chip {
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: none;
+  background: #f0f2f5;
+  font-size: 13px;
+  cursor: pointer;
+ border: #3d3d3d;
+}
+
+.chip.active {
+  background: #e6f6f2;
+  color: #008069;
+}
 /* top icon bar */
 .sidebar-top-icons {
     display: flex;
@@ -52,6 +76,7 @@
     cursor: pointer;
     color: #54656f;
 }
+
 
 .sidebar-header {
     padding: 18px 15px 5px;

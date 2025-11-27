@@ -30,6 +30,13 @@ function Sidebar({ chats, onSelectChat, selectedChat }) {
   <div className="sidebar-search">
     <input type="text" placeholder="Search or start a new chat" />
   </div>
+      {/* Filter chips */}
+      <div className="sidebar-filters">
+        <button className="chip active">All</button>
+        <button className="chip">Unread</button>
+        <button className="chip">Favourites</button>
+        <button className="chip">Groups</button>
+      </div>
 
   <div className="chat-list">
     {chats.map(chat => (
