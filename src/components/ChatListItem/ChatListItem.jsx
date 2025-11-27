@@ -1,5 +1,5 @@
 import React from "react";
-// import "./ChatListItem.css"
+import "./ListItem.css"
 const ChatListItem = ({ chat, onClick, active }) => {
     return (
         <div
