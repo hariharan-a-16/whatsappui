@@ -11,16 +11,6 @@
     border-bottom: 1px solid #e0e0e0;
 }
 
-.sidebar-search input {
-    width: 100%;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: none;
-    background: #ffffff;
-    font-size: 14px;
-    outline: none;
-}
-
 /* The entire sidebar container */
 .sidebar {
     width: 380px;
@@ -40,6 +30,22 @@
   border-bottom: 1px solid #d1d7db;
   background: #f8f9fa;   /* light grey */
 }
+.sidebar-search {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+.sidebar-search i {
+  position: absolute;
+  left: 20px;         /* icon padding from left */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: gray;
+}
+
 
 .chip {
   padding: 6px 12px;
@@ -53,7 +59,7 @@
 
 .chip.active {
   background: #e6f6f2;
-  color: #008069;
+  color: #6bb96d;
 }
 /* top icon bar */
 .sidebar-top-icons {
@@ -62,9 +68,10 @@
     padding: 15px;
     background: #ffffff;
     border-bottom: 1px solid #dcdcdc;
+     color: #6bb96d;
 }
 
-.sidebar-logo {
+.sidebar-logo{
     width: 28px;
     margin-right: auto;
 }
@@ -76,7 +83,6 @@
     color: #54656f;
 }
 
-
 .sidebar-header {
     padding: 18px 15px 5px;
     font-size: 22px;
@@ -84,19 +90,16 @@
     color: #3d3d3d;
 }
 
-/* search bar */
-.sidebar-search {
-    padding: 10px 15px;
-}
 
 .sidebar-search input {
-    padding: 10px 15px;
+    padding: 10px 15px 10px 35px; 
     width: 100%;
     border-radius: 10px;
     border: none;
     background: #ffffff;
     font-size: 15px;
 }
+
 
 /* chat list */
 .chat-list {

@@ -11,25 +11,18 @@ function Sidebar({ chats, onSelectChat, selectedChat }) {
       <div className="sidebar">
 
         <div className="sidebar-top-icons">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-            className="sidebar-logo"
-          />
-
+         <h3>Whatapp</h3>
+          <img className="sidebar-logo"  />
           <div className="sidebar-right-icons">
-            <i className="bi bi-people-fill"></i>
-            <i className="bi bi-broadcast"></i>
-            <i className="bi bi-chat-left-text"></i>
-            <i className="bi bi-dash-circle"></i>
-            <i className="bi bi-gear"></i>
+            <i class="bi bi-plus-square"></i>
+           <i class="bi bi-three-dots-vertical"></i>
+      
           </div>
         </div>
-
-        <div className="sidebar-header">Chats</div>
-
         <div className="sidebar-search">
-          <input type="text" placeholder="Search or start a new chat" />
-        </div>
+        <i className="bi bi-search"></i>
+  <input type="text"placeholder="Ask Meta AI or Search" />
+</div>
         {/* Filter chips */}
         <div className="sidebar-filters">
           <button className="chip active">All</button>

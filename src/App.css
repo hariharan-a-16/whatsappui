@@ -143,3 +143,36 @@
     opacity: 0.6;
     margin-bottom: 15px;
 }
+
+/* whole screen */
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+
+/* LEFT VERTICAL RAIL */
+.left-rail {
+  width: 72px;
+  background: #f0f2f5;
+  border-right: 1px solid #d1d7db;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 0;
+  align-items: center;
+}
+
+.left-rail-top,
+.left-rail-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-rail i {
+  font-size: 20px;
+  color: #54656f;
+  cursor: pointer;
+}

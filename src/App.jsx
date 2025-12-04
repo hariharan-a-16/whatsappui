@@ -185,7 +185,24 @@ const [selectedChat, setSelectedChat] = useState(null);
   };
 
   return (
-    <div className="app-container" style={{ display: "flex", height: "100vh" }}>
+    
+ <div className="app-container">
+      {/* Left vertical rail like WhatsApp Web */}
+      <div className="left-rail">
+        <div className="left-rail-top">
+           <i className="bi bi-chat-left-text"></i> 
+           <i class="bi bi-disc"></i>     
+           <i class="bi bi-chat-text"></i>
+          <i className="bi bi-people-fill"></i>
+          <i className="bi bi-circle"></i>
+          
+         
+        </div>
+        <div className="left-rail-bottom">
+          <i className="bi bi-gear"></i>
+        </div>
+      </div>
+
       <Sidebar
         chats={chats}
         onSelectChat={setSelectedChat}
